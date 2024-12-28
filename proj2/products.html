@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMANSH - Products</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <div class="logo header-font"><a href="index.html">IMANSH</a></div>
+         <!-- زر أيقونة الفتح/الإغلاق (للهاتف) -->
+  <div class="mobile-icon" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+        <nav class="nav-links">
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="link-active"><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-icons">
+          <a href="cart.html">
+            <span id="number-cart">3</span>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+      <section class="section product-listing">
+        <div class="container">
+          <h2 class="section-title">Our Perfume Collection</h2>
+          <div class="sort-search-container">
+            <div class="sort-container">
+              <label for="category-select">Category:</label>
+              <select id="category-select">
+                <option value="all">All</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+              </select>
+            </div>
+            <div class="search-container">
+              <input type="text" id="search-bar" placeholder="Search Perfumes..." />
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- side by side grid -->
+          <div class="product-grid">
+            <!-- main.js will insert product cards here -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer pinned at bottom -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-col">
+          <h3>IMANSH Perfumes</h3>
+          <p>Indulge in captivating scents that elevate every moment.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <p>Follow us on social media or browse our latest collections.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 IMANSH Perfumes. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMANSH - Contact</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+
+        <div class="logo header-font"><a href="index.html">IMANSH</a></div>
+         <!-- زر أيقونة الفتح/الإغلاق (للهاتف) -->
+  <div class="mobile-icon" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+        <nav class="nav-links">
+
+          <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li class="link-active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-icons">
+          <a href="cart.html">
+            <span id="number-cart">3</span>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+      <section class="section contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact IMANSH Perfumes</h2>
+          <p>
+            We’d love to hear from you! Whether you have questions about our products, 
+            need help finding your perfect fragrance, or simply want to share your feedback, 
+            our team is here for you.
+          </p>
+          <br/>
+
+          <!-- Contact Form -->
+          <form id="contactForm" style="max-width: 600px; margin: 0 auto;">
+            <!-- Full Name (split into First/Last) -->
+            <div style="display: flex; gap: 1rem;">
+              <div style="flex: 1;">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div style="flex: 1;">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div style="margin-top: 1rem;">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required />
+            </div>
+
+            <!-- Mobile -->
+            <div style="margin-top: 1rem;">
+              <label for="mobile">Mobile:</label>
+              <input type="tel" id="mobile" name="mobile" placeholder="+1 (555) 123-4567" required />
+            </div>
+
+            <!-- Address -->
+            <div style="margin-top: 1rem;">
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+
+         
+            <!-- Country -->
+            <div style="margin-top: 1rem;">
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="country" required />
+            </div>
+
+            <!-- Message -->
+            <div style="margin-top: 1rem;">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="margin-top: 1rem; text-align: center;">
+              <button type="submit" class="slide">Send Message</button>
+            </div>
+
+            <!-- Status/Confirmation Message -->
+            <p id="formStatus" style="color: var(--color-accent); margin-top: 1rem;"></p>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-col">
+          <h3>IMANSH Perfumes</h3>
+          <p>Indulge in captivating scents that elevate every moment.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <p>Contact via email at <strong>support@imanshperfumes.com</strong></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 IMANSH Perfumes. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!-- End .wrapper -->
+
+  <!-- Inline Script for Basic Validation -->
+  <script>
+    $(document).ready(function(){
+      $("#contactForm").on("submit", function(e){
+        e.preventDefault();
+
+        // Grab inputs
+        let firstName = $("#firstName").val().trim();
+        let lastName  = $("#lastName").val().trim();
+        let email     = $("#email").val().trim();
+        let mobile    = $("#mobile").val().trim();
+        let address   = $("#address").val().trim();
+        let age       = parseInt($("#age").val(), 10);
+        let hobbies   = $("#hobbies").val().trim();   // Optional
+        let country   = $("#country").val().trim();
+        let message   = $("#message").val().trim();
+
+        // Basic checks
+        if(!firstName || !lastName || !email || !mobile || !address 
+           || !age || !country || !message){
+          $("#formStatus").css("color", "red").text("Please fill out all required fields.");
+          return;
+        }
+        // Check valid email pattern (simple check)
+        let emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        if(!emailPattern.test(email)){
+          $("#formStatus").css("color", "red").text("Please enter a valid email address.");
+          return;
+        }
+        // Check age is a positive number
+        if(isNaN(age) || age < 1){
+          $("#formStatus").css("color", "red").text("Please enter a valid positive age.");
+          return;
+        }
+
+        // If validations pass
+        $("#formStatus").css("color", "green").text("Thank you! Your message has been sent.");
+
+        // Optionally reset form
+        this.reset();
+      });
+    });
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMANSH</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="toastBox"></div>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo header-font"><a href="index.html">IMANSH</a></div>
+       <!-- زر أيقونة الفتح/الإغلاق (للهاتف) -->
+  <div class="mobile-icon" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+      <nav class="nav-links">
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="cart.html">
+          <span id="number-cart">0</span>
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section cart-section">
+    <div class="container">
+      <h2 class="section-title">Your Shopping Cart</h2>
+
+      <div class="new-cart-interface" id="cart-items-container">
+      </div>
+
+      <div class="cart-summary" id="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-details">
+          <div class="summary-item">
+            <span>Subtotal:</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-item">
+            <span>Shipping:</span>
+            <span id="shipping">$10.00</span>
+          </div>
+          <div class="summary-item total">
+            <span>Grand Total:</span>
+            <span id="total">$10.00</span>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <a href="products.html" class="btn continue-shopping">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h3>IMANSH Perfumes</h3>
+        <p>A short tagline here.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Information</h4>
+        <p>Email: info@imanshperfumes.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 IMANSH Perfumes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

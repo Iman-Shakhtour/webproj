@@ -1,0 +1,261 @@
+{
+  "all": [
+    {
+      "id": 1,
+      "title": "Men's Fragrance 1",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men1.jpg",
+      "category": "men"
+    },
+    {
+      "id": 2,
+      "title": "Men's Fragrance 2",
+      "description": "Men's fragrance with a strong aroma.",
+      "price": 40.00,
+      "image_id": "men2.jpg",
+      "category": "men"
+    },
+    {
+      "id": 3,
+      "title": "Men's Fragrance 3",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men3.jpg",
+      "category": "men"
+    },
+    {
+      "id": 4,
+      "title": "Men's Fragrance 4",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men4.jpg",
+      "category": "men"
+    },
+    {
+      "id": 5,
+      "title": "Men's Fragrance 5",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men5.jpg",
+      "category": "men"
+    },
+    {
+      "id": 6,
+      "title": "Men's Fragrance 6",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men6.jpg",
+      "category": "men"
+    },
+    {
+      "id": 7,
+      "title": "Men's Fragrance 7",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men7.jpg",
+      "category": "men"
+    },
+    {
+      "id": 8,
+      "title": "Men's Fragrance 8",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men8.jpg",
+      "category": "men"
+    },
+    {
+      "id": 9,
+      "title": "Men's Fragrance 9",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men9.jpg",
+      "category": "men"
+    },
+    {
+      "id": 10,
+      "title": "Men's Fragrance 10",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men10.jpg",
+      "category": "men"
+    },
+    {
+      "id": 11,
+      "title": "Men's Fragrance 11",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men11.jpg",
+      "category": "men"
+    },
+    {
+      "id": 12,
+      "title": "Men's Fragrance 12",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men12.jpg",
+      "category": "men"
+    },
+    {
+      "id": 13,
+      "title": "Men's Fragrance 13",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men13.jpg",
+      "category": "men"
+    },
+    {
+      "id": 14,
+      "title": "Men's Fragrance 14",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men14.jpg",
+      "category": "men"
+    },
+    {
+      "id": 15,
+      "title": "Men's Fragrance 15",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men15.jpg",
+      "category": "men"
+    },
+    {
+      "id": 16,
+      "title": "Men's Fragrance 16",
+      "description": "Men's fragrance with a distinctive scent.",
+      "price": 35.00,
+      "image_id": "men16.jpg",
+      "category": "men"
+    },
+    {
+      "id": 17,
+      "title": "Women's Fragrance 1",
+      "description": "A captivating and refreshing women's fragrance.",
+      "price": 45.00,
+      "image_id": "women1.jpg",
+      "category": "women"
+    },
+    {
+      "id": 18,
+      "title": "Women's Fragrance 2",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women2.jpg",
+      "category": "women"
+    },
+    {
+      "id": 19,
+      "title": "Women's Fragrance 3",
+      "description": "A captivating and refreshing women's fragrance.",
+      "price": 45.00,
+      "image_id": "women3.jpg",
+      "category": "women"
+    },
+    {
+      "id": 20,
+      "title": "Women's Fragrance 4",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women4.jpg",
+      "category": "women"
+    },
+    {
+      "id": 21,
+      "title": "Women's Fragrance 5",
+      "description": "A captivating and refreshing women's fragrance.",
+      "price": 45.00,
+      "image_id": "women5.jpg",
+      "category": "women"
+    },
+    {
+      "id": 22,
+      "title": "Women's Fragrance 6",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women6.jpg",
+      "category": "women"
+    },
+    {
+      "id": 23,
+      "title": "Women's Fragrance 7",
+      "description": "A captivating and refreshing women's fragrance.",
+      "price": 45.00,
+      "image_id": "women7.jpg",
+      "category": "women"
+    },
+    {
+      "id": 24,
+      "title": "Women's Fragrance 8",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women8.jpg",
+      "category": "women"
+    },
+    {
+      "id": 25,
+      "title": "Women's Fragrance 9",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women9.jpg",
+      "category": "women"
+    },
+    {
+      "id": 26,
+      "title": "Women's Fragrance 10",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women10.jpg",
+      "category": "women"
+    },
+    {
+      "id": 27,
+      "title": "Women's Fragrance 11",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women11.jpg",
+      "category": "women"
+    },
+    {
+      "id": 28,
+      "title": "Women's Fragrance 12",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women12.jpg",
+      "category": "women"
+    },
+    {
+      "id": 29,
+      "title": "Women's Fragrance 13",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women13.jpg",
+      "category": "women"
+    },
+    {
+      "id": 30,
+      "title": "Women's Fragrance 14",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women14.jpg",
+      "category": "women"
+    },
+    {
+      "id": 31,
+      "title": "Women's Fragrance 15",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women15.jpg",
+      "category": "women"
+    },
+    {
+      "id": 32,
+      "title": "Women's Fragrance 16",
+      "description": "A luxurious fragrance with a romantic scent.",
+      "price": 50.00,
+      "image_id": "women16.jpg",
+      "category": "women"
+    }
+  ],
+  "categories": []
+}
